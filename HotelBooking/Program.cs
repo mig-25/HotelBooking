@@ -1,12 +1,16 @@
 ﻿using System;
 
-namespace HotelBooking
+namespace Hotell
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Hotel hotel = new Hotel();
+            hotel.bookRum();
+
+            RoomKeyCard rk = new RoomKeyCard();
+            rk.useKeyCard(hotel);//association relation to hotel
         }
     }
 }
